@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,x,y;
+	printf("Enter the two numbers:");
+	scanf("%d%d",&a,&b);
+	x=a++;
+	y=--x+b++;
+	printf("a=%d",a);
+	printf("\nb=%d",b);
+	printf("\nx=%d",x);
+	printf("\ny=%d",y);
+	return 0;
+}
