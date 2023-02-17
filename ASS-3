@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+	float ems,eas,t,gst,it,ta;
+	printf("Enter the monthly salary:");
+	scanf("%f",&ems);
+	eas=ems*12;
+	
+	
+	if(eas>=5000000)
+	{
+	t=0.2;
+}
+	else if(eas>=3000000)
+	{
+	t=0.15;
+}
+	else if(eas>=1000000)
+	{
+	t=0.1;
+}
+	else if(eas>=700000)
+	{
+	t=0.07;
+	}
+	else if(eas>=500000)
+	{
+	t=0.05;
+	}
+	else if(eas>=300000)
+	{
+	t=0.03;
+	}
+	else
+	{
+	t=0;}
+	
+	ta=eas*t;
+	gst=ta*0.18;
+	it=ta+gst;
+	printf("Incometax = %f",it);
+	return 0;
+	
+}
